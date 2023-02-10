@@ -1,0 +1,53 @@
+/* Colors by Tailwind CSS: https://tailwindcss.com/docs/customizing-colors */
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, sans-serif;
+    padding: 1rem;
+}
+
+h1 {
+    margin: 1rem 0;
+}
+
+p {
+    margin: 0.5rem 0;
+}
+
+button {
+    margin: 1rem 0;
+    padding: 0.5rem 2rem;
+    background: #1d4ed8; /* blue-700 */
+    border: none;
+    border-radius: 0.25rem;
+    color: #ffffff;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background: #1e293b; /* slate-800 */
+        color: #94a3b8; /* slate-400 */
+    }
+    h1 {
+        color: #ffffff; /* white */
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    body {
+        background: #ffffff; /* white */
+        color: #64748b; /* slate-500 */
+    }
+    h1 {
+        color: #0f172a; /* slate-900 */
+    }
+}
